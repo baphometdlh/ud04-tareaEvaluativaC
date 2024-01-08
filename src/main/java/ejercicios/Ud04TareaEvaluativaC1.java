@@ -13,7 +13,7 @@ public class Ud04TareaEvaluativaC1 {
 			//creamos un objeto Course y le añadimos un student
 			System.out.println("Creando un nuevo Curso y agregando un alumno...");
 			
-			Student student = entityManager.getReference(Student.class, 14);
+			Student student = entityManager.getReference(Student.class, 10);
 			Course course = createCourse();
 			
 			student.getCourses().add(course);
@@ -46,8 +46,8 @@ public class Ud04TareaEvaluativaC1 {
 	private static Course createCourse() {
 		Course tempCourse = new Course();
 		
-		tempCourse.setName("Acceso a Datos");
-		tempCourse.setCredits(5);
+		tempCourse.setName("Desarrollo interfaces");
+		tempCourse.setCredits(4);
 		
 		return tempCourse;
 	}
